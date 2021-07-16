@@ -5,15 +5,16 @@
     <div class="login-content">
         <p>
             <mat-form-field appearance="outline">
-                <input matInput placeholder="Enter your email" [formControl]="email" required>
-                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}></mat-error>
+                <input matInput placeholder="Enter your email" [formControl]="email" [(ngModel)]='username' required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
             </mat-form-field>
         <p>
             <mat-form-field appearance="outline">
-                <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                <input matInput placeholder="Enter your password" [(ngModel)]='password' [type]="hide ? 'password' : 'text'">
                 <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </mat-form-field>
         </p>
-        <p> <button mat-raised-button>Login</button></p>
+        <p> <button mat-raised-button (click)="onLogin()">Login</button></p>
+        <p id="errorMsg">{{loginErrorMessage}}</p>
     </div>
 </div>

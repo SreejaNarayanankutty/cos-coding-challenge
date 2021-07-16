@@ -16,19 +16,24 @@
 }
 
 mat-form-field{
-      width: 80%;
+    width: 80%;
 }
 
 h1{
-      padding-left:8%;
-      color: rgb(30, 18, 75);
-      text-shadow: 2px 2px 2px #CCCCCC;
-      font-size: 30px;
+    padding-left:8%;
+    color: rgb(30, 18, 75);
+    text-shadow: 2px 2px 2px #CCCCCC;
+    font-size: 30px;
 }
 
 button{
-      background-color: darkblue;
-      color: white;
-      width: 40%;
-        margin-left: 20%;
+    background-color: darkblue;
+    color: white;
+    width: 40%;
+    margin-left: 20%;
+}
+#errorMsg {
+    color: red;
+    font-weight:bold;
+    padding-left: 17%;
 }

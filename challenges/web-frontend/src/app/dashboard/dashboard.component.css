@@ -1,0 +1,12 @@
+mat-grid-tile {
+    background: rgb(255, 255, 255);
+}
+
+mat-grid-list{
+  width: 90%;
+  margin-left:5%;
+}
+ img{
+   width: 100%;
+   height: 100%;
+ }
