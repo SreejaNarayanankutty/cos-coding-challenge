@@ -20,20 +20,36 @@ mat-form-field{
 }
 
 h1{
-    padding-left:8%;
+    padding-left:7%;
     color: rgb(30, 18, 75);
     text-shadow: 2px 2px 2px #CCCCCC;
-    font-size: 30px;
+    font-size: 40px;
+    position: relative;
+
 }
 
 button{
     background-color: darkblue;
     color: white;
-    width: 40%;
-    margin-left: 20%;
+    width: 30%;
+    margin-left: 22%;
 }
 #errorMsg {
     color: red;
     font-weight:bold;
-    padding-left: 17%;
+    padding-left: 15%;
+    position: relative;
+    
+}
+
+@media screen and (min-width: 601px) {
+   h1{
+      font-size: 30px;
+   }
+}
+    
+@media screen and (max-width: 600px) {
+   h1{
+      font-size: 20px;
+   }
 }

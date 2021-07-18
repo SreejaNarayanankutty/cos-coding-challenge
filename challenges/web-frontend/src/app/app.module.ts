@@ -11,7 +11,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { DashboardComponent } from './dashboard/dashboard.component'
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import {MatListModule} from '@angular/material/list'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule,
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
