@@ -1,12 +1,16 @@
 <mat-drawer-container>
   <mat-drawer mode="side" class="sideNav" opened>
     <img class="logoImage" src='./assets/caronsalelogo.jpg'>
+    <div class="logoutCls"><mat-icon class="logout">account_circle</mat-icon>
+    <span id="userDet">{{username}}</span>
+    <a id="userLogOut" href="" (click)="onLogout()">logout</a>
+    </div>
   </mat-drawer>
   <mat-drawer-content>
     <div class="dashboard-container" style="display:flex; flex-wrap: wrap;">
       <mat-card class="car-card" *ngFor="let item of items">
         <img class="carImage" mat-card-image [src]='item.imageUrl' [alt]='item.label'>
-        <mat-card-content>
+        <mat-card-content [matBadge]="item.amIHighestBidder?'1st':''" [matTooltip]="item.amIHighestBidder?'You are Highest Bidder':''" matBadgeOverlap="false" matBadgeSize="medium" matBadgeColor="warn">
           <div class="carNameDiv">
             <p class="carName">{{item.label}}</p>
           </div>

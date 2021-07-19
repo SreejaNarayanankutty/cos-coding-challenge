@@ -57,7 +57,61 @@ td{
     
 }
 .sideNav {
+  position: fixed;
   width: 200px;
-  height: 100%;
-  background-color: rgb(251 191 14);
+  /* background-color: rgb(251 191 14); */
+  background-color: #ffab40;
+}
+.logout{
+ font-size: 35px;
+}
+.logoutCls{
+  position: fixed;
+  bottom: 20px;
+}
+#userDet {
+  position: fixed;
+  height: 20px;
+  padding-left: 10px;
+  bottom: px;
+  font-weight: bold;
+}
+#userLogOut{
+  padding-left: 10px;
+}
+   
+@media screen and (max-width: 600px) {
+  .sideNav {
+    width: 100px;
+    text-align: center;
+  }
+  .logoImage{
+    height: 100px;
+    width: 100px;
+  }
+  .car-card {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+  }
+  #userDet {
+    display: none;
+  }
+  .logout{
+    text-align: center;
+    width: 100%;
+   }
+   #userLogOut{
+    padding-left:0px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .car-card {
+    width: 40%;
+    height: 100%;
+  }
+  
+}
+.dashboard-container{
+  min-height: 100vh;
 }

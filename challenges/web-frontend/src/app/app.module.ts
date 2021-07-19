@@ -15,6 +15,9 @@ import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import {MatListModule} from '@angular/material/list'
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +38,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     HttpClientModule,
     MatCardModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatBadgeModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
