@@ -52,9 +52,7 @@ th{
   font-weight: normal;
 }
 td{
- 
-    color: #212121;
-    
+  color: #212121;  
 }
 .sideNav {
   position: fixed;
@@ -63,7 +61,7 @@ td{
   background-color: #ffab40;
 }
 .logout{
- font-size: 35px;
+  font-size: 35px;
 }
 .logoutCls{
   position: fixed;
