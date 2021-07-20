@@ -41,13 +41,13 @@ button{
     
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1001px) {
    h1{
       font-size: 30px;
    }
 }
     
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
    h1{
       font-size: 20px;
    }
